@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "9942182436",
+    "firebase_url": "https://muscle-art-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "muscle-art",
+    "storage_bucket": "muscle-art.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9942182436:android:49ffa3011778970d45c6b1",
+        "android_client_info": {
+          "package_name": "basam.example.com.muscleart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9942182436-l8je5t0f30scjl16gttpmg7drj002l2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "basam.example.com.muscleart",
+            "certificate_hash": "6dbf6be77ba4ee070bf23a57654042631306b374"
+          }
+        },
+        {
+          "client_id": "9942182436-6e9l99kb684dc4koj83s0qdru3nn4mnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv6pwShYQFu0kkA42NdnOE8P4e3X6eo44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9942182436-6e9l99kb684dc4koj83s0qdru3nn4mnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

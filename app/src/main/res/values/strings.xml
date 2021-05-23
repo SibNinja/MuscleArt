@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">MuscleArt</string>
+    <string name="app_in_name">MuscleArt</string>
+    <string name="app_name_after">Register App</string>
+    <string name="text_bottom">Войдите в свою учетную запись!</string>
+    <string name="btnSignIn">Войти</string>
+    <string name="btnRegister">Зарегистрироваться</string>
+
+    <string name="map_in_name">Body Type</string>
+    <string name="map_name_after">Заполните, чтобы определить тип вашего телосложения</string>
+    <string name="btnNext">Продолжить</string>
+    <string name="btnCancel">Назад</string>
+    <string name="text_map_bottom">Перед продолжением заполните все поля!</string>
+    <string name="height_string">Рост (см)</string>
+    <string name="weight_string">Вес (кг)</string>
+    <string name="wrist_string">Обхват запястья (см)</string>
+    <string name="exp_string">Стаж тренировок (лет)</string>
+
+    <string name="map_in_preview">Perfect Proportions</string>
+    <string name="prop_name_after">Пожалуйста заполните ваши параметры</string>
+    <string name="bodyNeck">Шея</string>
+    <string name="bodyBiceps">Бицепс</string>
+    <string name="bodyForearm">Предплечья</string>
+    <string name="bodyChest">Грудь</string>
+    <string name="bodyWaist">Талия</string>
+    <string name="bodyBasin">Таз</string>
+    <string name="bodyHips">Бедро</string>
+    <string name="bodyShin">Голень</string>
+
+
+    <string name="person_data">Личные данные</string>
+    <string name="statistic">Статистика</string>
+    <string name="plan">Составить пллан</string>
+    <string name="prop">Рассчитать пропорции</string>
+    <string name="аct1">Актуальные</string>
+    <string name="аct2">Пропорции</string>
+    <string name="аct3">Прогноз</string>
+    <string name="size_hint">00.0 (см)</string>
+    <string name="bd_type">Your Body Type</string>
+    <string name="mbt">Тип телосложения</string>
+    <string name="pro_n">Prognosis</string>
+    <string name="progn_after">Тренируйтесь и результат не заставит себя ждать!</string>
+    <string name="help">помощь</string>
+    <string name="todo">TODO</string>
+    <string name="exit">Выйти</string>
+
+
+</resources>

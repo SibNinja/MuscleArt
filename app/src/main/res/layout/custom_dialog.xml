@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="480dp"
+            android:background="@drawable/image"
+            android:contentDescription="@string/todo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/theme"
+            >
+
+            <Button
+                android:id="@+id/btnBuy"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="#e27a5d"
+                android:text="@string/btnNext"
+                android:textColor="@android:color/white" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
