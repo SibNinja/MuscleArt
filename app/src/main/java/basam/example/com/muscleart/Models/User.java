@@ -5,13 +5,16 @@ import com.google.firebase.database.IgnoreExtraProperties;
 @IgnoreExtraProperties
 public class User {
     public String name, email, pass, phone;
-    public User(){}
+
+    public User() {
+    }
 
     public User(String name, String email, String pass, String phone) {
         this.name = name;
         this.email = email;
         this.pass = pass;
         this.phone = phone;
+
     }
 
     public String getName() {
@@ -45,4 +48,5 @@ public class User {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
 }

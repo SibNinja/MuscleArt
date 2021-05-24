@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -101,7 +102,10 @@ public class MainActivity extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
-                        startActivity(new Intent(MainActivity.this,MapActivity.class));
+                        Intent i = new Intent(MainActivity.this, MapActivity.class);
+                        String key = users.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).getKey();
+                        i.putExtra("key", key);
+                        startActivity(i);
                         finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
@@ -178,6 +182,7 @@ public class MainActivity extends AppCompatActivity {
                                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void aVoid) {
+
                                         Snackbar.make(root,"Пользователь добавлен!",Snackbar.LENGTH_SHORT).show();
                                     }
                                 });

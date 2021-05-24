@@ -13,13 +13,21 @@ import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class PropActivity extends AppCompatActivity {
     Dialog dialog;
     BDHelper helper = new BDEmul();
     Button btnCancel, btnNext, help;
     RelativeLayout root_p;
+    FirebaseDatabase db;      //подключение
+    DatabaseReference size;
     //Базовые параметры
     double[] pMy = new double[8];
     //стартовые, желаемые, время в неделях
@@ -45,6 +53,9 @@ public class PropActivity extends AppCompatActivity {
         basin =  findViewById(R.id.basinMy);
         hips =  findViewById(R.id.hipsMy);
         shin =  findViewById(R.id.shinMy);
+
+        dataBaseInit();
+
 
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,10 +141,12 @@ public class PropActivity extends AppCompatActivity {
         i.putExtra("perfect", p);
         i.putExtra("wrist",wrist);
         i.putExtra("exp",exp);
+        pushSize();
         startActivity(i);
 
         // finish();
     }
+
 
     private void showDialog() {
         // custom dialog
@@ -149,4 +162,173 @@ public class PropActivity extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.show();
     }
+
+
+    private void dataBaseInit() {
+        Intent intent = getIntent();
+        String key = intent.getStringExtra("key1");
+        //key = key+"/Size";
+        //попытка сохранить то что ввели
+        db = FirebaseDatabase.getInstance();
+        size = db.getReference(key);
+        size.child("neck").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                String text = snapshot.getValue(String.class);
+                if(!TextUtils.isEmpty(text))
+                    neck.setText(text);
+            }
+            @Override
+            public void onCancelled(DatabaseError error) {
+
+            }
+        });
+        size.child("biceps").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                String text = snapshot.getValue(String.class);
+                if(!TextUtils.isEmpty(text))
+                    biceps.setText(text);
+            }
+            @Override
+            public void onCancelled(DatabaseError error) {
+
+            }
+        });
+        size.child("forearm").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                String text = snapshot.getValue(String.class);
+                if(!TextUtils.isEmpty(text))
+                    forearm.setText(text);
+            }
+            @Override
+            public void onCancelled(DatabaseError error) {
+
+            }
+        });
+        size.child("chest").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                String text = snapshot.getValue(String.class);
+                if(!TextUtils.isEmpty(text))
+                    chest.setText(text);
+            }
+            @Override
+            public void onCancelled(DatabaseError error) {
+
+            }
+        });
+
+        size.child("waist").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                String text = snapshot.getValue(String.class);
+                if(!TextUtils.isEmpty(text))
+                    waist.setText(text);
+            }
+            @Override
+            public void onCancelled(DatabaseError error) {
+
+            }
+        });
+        size.child("basin").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                String text = snapshot.getValue(String.class);
+                if(!TextUtils.isEmpty(text))
+                    basin.setText(text);
+            }
+            @Override
+            public void onCancelled(DatabaseError error) {
+
+            }
+        });
+        size.child("hips").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                String text = snapshot.getValue(String.class);
+                if(!TextUtils.isEmpty(text))
+                    hips.setText(text);
+            }
+            @Override
+            public void onCancelled(DatabaseError error) {
+
+            }
+        });
+        size.child("shin").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                String text = snapshot.getValue(String.class);
+                if(!TextUtils.isEmpty(text))
+                    shin.setText(text);
+            }
+            @Override
+            public void onCancelled(DatabaseError error) {
+
+            }
+        });
+    }
+
+    private void pushSize() {
+
+        size.child("neck").setValue(neck.getText().toString())
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+
+                    }
+                });
+        size.child("biceps").setValue(biceps.getText().toString())
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+
+                    }
+                });
+        size.child("forearm").setValue(forearm.getText().toString())
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+
+                    }
+                });
+        size.child("chest").setValue(chest.getText().toString())
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+
+                    }
+                });
+        size.child("waist").setValue(waist.getText().toString())
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+
+                    }
+                });
+        size.child("basin").setValue(basin.getText().toString())
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+
+                    }
+                });
+        size.child("hips").setValue(hips.getText().toString())
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+
+                    }
+                });
+        size.child("shin").setValue(shin.getText().toString())
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+
+                    }
+                });
+    }
+
+
 }
