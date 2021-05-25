@@ -18,7 +18,7 @@ public class PreviewActivity extends AppCompatActivity {
     double[] pMy;
     double[] p;
     double[] time;
-
+    double wrist;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +60,7 @@ public class PreviewActivity extends AppCompatActivity {
         i.putExtra("my_prop", pMy);
         i.putExtra("perfect", p);
         i.putExtra("p_time", time);
+        i.putExtra("wrist", wrist);
         startActivity(i);
 
         // finish();
@@ -69,7 +70,7 @@ public class PreviewActivity extends AppCompatActivity {
         Intent intent = getIntent();
         pMy = intent.getDoubleArrayExtra("my_prop");
         p = intent.getDoubleArrayExtra("perfect");
-        double wrist = intent.getDoubleExtra("wrist",15);
+        wrist = intent.getDoubleExtra("wrist",0);
         int exp = intent.getIntExtra("exp",0);
         String type="Мезоморф";
         if(wrist < 16.5) type = "Эктоморф";

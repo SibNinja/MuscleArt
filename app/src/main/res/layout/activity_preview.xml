@@ -366,7 +366,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="15dp"
         android:fontFamily="@font/montserrat"
         android:text=""
         android:textColor="@color/text_bottom"

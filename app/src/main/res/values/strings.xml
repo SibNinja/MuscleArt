@@ -38,7 +38,7 @@
     <string name="size_hint">00.0 (см)</string>
     <string name="bd_type">Your Body Type</string>
     <string name="mbt">Тип телосложения</string>
-    <string name="pro_n">Prognosis</string>
+    <string name="pro_n">Prognosis List</string>
     <string name="progn_after">Тренируйтесь и результат не заставит себя ждать!</string>
     <string name="help">помощь</string>
     <string name="todo">TODO</string>
@@ -46,6 +46,30 @@
     <string name="size_hint2">00.0</string>
     <string name="hint_exp">0 (лет)</string>
     <string name="size_hint3">00.0 (кг)</string>
+    <string name="stat_in_name">Progress Statistic</string>
+    <string name="stat_name_after">Оцените интересующие вас параметры</string>
+    <string name="nxt_stat">Статистика</string>
+    <string name="bodyNeckp">Шея:</string>
+    <string name="bodyBicepsp">Бицепс:</string>
+    <string name="bodyForearmp">Предплечье</string>
+    <string name="bodyChestP">Грудь:</string>
+    <string name="RecBtn">Рекомендация</string>
+    <string name="AboutMez">Ваша ключевая особенность — любовь к спорту и атлетический тип фигуры от природы. </string>
+    <string name="AboutMez1">Особенности обмена веществ мезоморфа — пониженная выработка кортизола и высокая способность организма усваивать белок. Мускулы быстрее восстанавливаются — что позволяет тренироваться чаще.</string>
+    <string name="AboutMez2">В силу высокого уровня гормона роста и тестостерона мезоморфы плохо набирают жировую массу, поэтому до определенного возраста они могут позволить себе высококалорийное питание без ограничений. </string>
+    <string name="Mez">You Are Mesomorph!</string>
+    <string name="Ect">You Are Ectomorph!</string>
+    <string name="End">You Are Endomorph!</string>
+    <string name="SportM">Подходящие виды спорта: Циклические (бег, плавание), Сложнокоординационные (акробатика, единоборства) Силовые (Культуризм)</string>
+    <string name="AboutEnd">Ваши особенности: Высокая скорость набора массы мышечных тканей.  Высокие силовые показатели. </string>
+    <string name="AboutEndM">Минусом является то, что эндоморф быстро набирает много подкожного жира.</string>
+    <string name="AboutEnd3">Лучшим способом достичь катаболического эффекта утилизации подкожного жира для эндоморфа является применение белковой диеты и силовых тренировок. </string>
+    <string name="SportEnd">Подходящие виды спорта: Силовые (пауэрлифтинг, бодибилдинг, гиревой спорт), хоккей, бокс.
+</string>
+    <string name="AboutEct">Вышей ключевой особенностью является высокий метаболизм, который не дает вам возможности набрать большую мышечную массу.</string>
+    <string name="AboutEct1">Чтобы набрать массу, нужно тренироваться не чаще трех раз в неделю. Коротко и интенсивно, с тяжелыми базовыми упражнениями, сплитами.</string>
+    <string name="AboutEct2">Эктоморфу требуется повышенное содержание калорий. В дни без тренировок рекомендуется вести малоподвижный образ жизни.</string>
+    <string name="SportEct">Подходят циклические виды спорта: гребля, конькобежный спорт, бег, плавание, велоспорт.</string>
 
 
 </resources>

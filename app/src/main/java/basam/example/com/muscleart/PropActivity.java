@@ -32,7 +32,8 @@ public class PropActivity extends AppCompatActivity {
     double[] pMy = new double[8];
     //стартовые, желаемые, время в неделях
     EditText neck, biceps, forearm, chest, waist, basin, hips, shin;
-
+    public static int count;
+    //public static String sKey;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -142,6 +143,8 @@ public class PropActivity extends AppCompatActivity {
         i.putExtra("wrist",wrist);
         i.putExtra("exp",exp);
         pushSize();
+
+        count++;
         startActivity(i);
 
         // finish();
@@ -168,6 +171,7 @@ public class PropActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String key = intent.getStringExtra("key1");
         //key = key+"/Size";
+       // sKey=key;
         //попытка сохранить то что ввели
         db = FirebaseDatabase.getInstance();
         size = db.getReference(key);

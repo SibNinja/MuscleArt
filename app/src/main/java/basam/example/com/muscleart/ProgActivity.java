@@ -16,6 +16,7 @@ public class ProgActivity extends AppCompatActivity {
     TextView neck,  biceps,  forearm,  chest,  waist,  basin,  hips,  shin;
     TextView neck2, biceps2, forearm2, chest2, waist2, basin2, hips2, shin2;
     TextView neck3, biceps3, forearm3, chest3, waist3, basin3, hips3, shin3;
+    double wrist;
     double[] time;
     double[] pMy;
     double[] p;
@@ -61,6 +62,9 @@ public class ProgActivity extends AppCompatActivity {
         pMy = intent.getDoubleArrayExtra("my_prop");
         p = intent.getDoubleArrayExtra("perfect");
         time = intent.getDoubleArrayExtra("p_time");
+         wrist = intent.getDoubleExtra("wrist", 0);
+        //Intent i = new Intent(this, StatActivity.class);
+        //i.putExtra("wrist",wrist);
         stint();
         row2();
         row3();
@@ -146,5 +150,10 @@ public class ProgActivity extends AppCompatActivity {
 
 
     private void showStatistic() {
+        Intent i = new Intent(this, StatActivity.class);
+        i.putExtra("my_prop", pMy);
+        i.putExtra("perfect", p);
+        i.putExtra("wrist",wrist);
+        startActivity(i);
     }
 }

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/theme"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/suez_one"
+            android:text="@string/Mez"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/bat"
+            android:contentDescription="@string/todo" />
+        <TextView
+            android:id="@+id/Rec"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:layout_height="wrap_content"
+            android:background="@color/theme"
+            android:textColor="@color/browser_actions_bg_grey"
+            android:text=""
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:id="@+id/food_sport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/theme"
+            android:fontFamily="@font/montserrat"
+            android:text=""
+            android:textColor="@color/browser_actions_bg_grey" />
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:layout_height="wrap_content"
+            android:background="@color/theme"
+            android:textColor="@color/browser_actions_bg_grey"
+            android:text="@string/AboutMez"
+            android:layout_margin="5dp"
+    />
+        <TextView
+            android:id="@+id/aboutM"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:layout_height="wrap_content"
+            android:background="@color/theme"
+            android:textColor="@color/browser_actions_bg_grey"
+            android:text="@string/AboutMez1"
+            android:layout_margin="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/about2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/theme"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/AboutMez2"
+            android:textColor="@color/browser_actions_bg_grey" />
+
+
+        <TextView
+            android:id="@+id/sport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/theme"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/SportM"
+            android:textColor="@color/browser_actions_bg_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/theme"
+            >
+
+            <Button
+                android:id="@+id/btnBuy"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="#e27a5d"
+                android:text="@string/btnNext"
+                android:textColor="@android:color/white"
+                android:layout_margin="10dp"/>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+        </ScrollView>
+
+</RelativeLayout>
