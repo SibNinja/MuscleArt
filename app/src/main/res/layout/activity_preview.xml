@@ -405,7 +405,7 @@
             android:layout_weight="1"
             android:background="@drawable/btn_register"
             android:fontFamily="@font/montserrat"
-            android:text="@string/btnNext"
+            android:text="@string/btnPrg"
             android:textColor="@color/white" />
     </LinearLayout>
 </RelativeLayout>
